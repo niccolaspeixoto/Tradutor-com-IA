@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev Tradutor</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="selecting-language">
+            <select class="input-container">
+                <option value="pt">Português (Brasil)</option>
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="fr">Francês</option>
+                <option value="de">Alemão</option>
+                <option value="it">Italiano</option>
+                <option value="ja">Japonês</option>
+            </select>
+
+            <textarea class="input-text" placeholder="Ponha o texto que quer traduzir aqui:"></textarea>
+        </div>
+
+        <div class="control">
+            <select class="language">
+                <option value="en">Inglês</option>
+                <option value="pt">Português (Brasil)</option>
+                <option value="es">Espanhol</option>
+                <option value="fr">Francês</option>
+                <option value="de">Alemão</option>
+                <option value="it">Italiano</option>
+                <option value="ja">Japonês</option>
+            </select>
+
+            <div class="interact">
+                <button id="translateButton">
+                    <img src="./assets/traduzir.svg" alt="Ícone de tradução">
+                </button>
+                <button id="microphoneButton">
+                    <img src="./assets/microfone.svg" alt="Ícone de microfone">
+                </button>
+            </div>
+        </div>
+
+        <div class="result">
+            <h3>Tradução</h3>
+            <p id="translatedText">A tradução aparecerá aqui:</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
